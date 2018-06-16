@@ -1,4 +1,45 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "roboto-g";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-g";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-g";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-g";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/RobotoBlack/RobotoBlack.eot");
+  src: url("../fonts/RobotoBlack/RobotoBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBlack/RobotoBlack.woff") format("woff"), url("../fonts/RobotoBlack/RobotoBlack.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "baron-g";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/BaronBold/BaronBold.eot");
+  src: url("../fonts/BaronBold/BaronBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BaronBold/BaronBold.woff") format("woff"), url("../fonts/BaronBold/BaronBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "baron-g";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/BaronBlack/BaronBlack.eot");
+  src: url("../fonts/BaronBlack/BaronBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/BaronBlack/BaronBlack.woff") format("woff"), url("../fonts/BaronBlack/BaronBlack.ttf") format("truetype"); }
 
 @font-face {
   font-family: "ProximaNovaRegular-g";
@@ -4807,8 +4848,8 @@ body {
       position: absolute;
       top: -175px;
       left: 550px;
-      -webkit-animation: spiderSwaying 10s;
-              animation: spiderSwaying 10s;
+      -webkit-animation: spiderSwaying 15s;
+              animation: spiderSwaying 15s;
       -webkit-animation-iteration-count: infinite;
               animation-iteration-count: infinite; }
     .blocks .qwe .lighter {
@@ -4817,8 +4858,8 @@ body {
       position: absolute;
       top: 400px;
       left: 830px;
-      -webkit-animation: spiderSwaying 10s;
-              animation: spiderSwaying 10s;
+      -webkit-animation: spiderSwaying 15s;
+              animation: spiderSwaying 15s;
       -webkit-animation-iteration-count: infinite;
               animation-iteration-count: infinite; }
     .blocks .qwe .budright {
@@ -4990,12 +5031,12 @@ body {
 .hidemenu {
   display: none; }
 
-#inputblock-cart, #inputblock-coffe, #inputblock-bear, #inputblock-nast, #inputblock-vodka, #inputblock-kogn, #inputblock-burg, #inputblock-vermt {
+#inputblock {
   position: absolute;
   top: 240px;
   left: 400px;
   z-index: 20; }
-  #inputblock-cart .header-input, #inputblock-coffe .header-input, #inputblock-bear .header-input, #inputblock-nast .header-input, #inputblock-vodka .header-input, #inputblock-kogn .header-input, #inputblock-burg .header-input, #inputblock-vermt .header-input {
+  #inputblock .header-input {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -5010,7 +5051,7 @@ body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    #inputblock-cart .header-input .name, #inputblock-coffe .header-input .name, #inputblock-bear .header-input .name, #inputblock-nast .header-input .name, #inputblock-vodka .header-input .name, #inputblock-kogn .header-input .name, #inputblock-burg .header-input .name, #inputblock-vermt .header-input .name {
+    #inputblock .header-input .name {
       text-align: center;
       width: 110px;
       height: 30px;
@@ -5021,7 +5062,7 @@ body {
       font-family: ProximaNovaRegular-g, sans-serif;
       font-size: 20px;
       font-weight: 400; }
-    #inputblock-cart .header-input .amount, #inputblock-coffe .header-input .amount, #inputblock-bear .header-input .amount, #inputblock-nast .header-input .amount, #inputblock-vodka .header-input .amount, #inputblock-kogn .header-input .amount, #inputblock-burg .header-input .amount, #inputblock-vermt .header-input .amount {
+    #inputblock .header-input .amount {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -5035,7 +5076,7 @@ body {
       -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
               justify-content: space-around; }
-      #inputblock-cart .header-input .amount p, #inputblock-coffe .header-input .amount p, #inputblock-bear .header-input .amount p, #inputblock-nast .header-input .amount p, #inputblock-vodka .header-input .amount p, #inputblock-kogn .header-input .amount p, #inputblock-burg .header-input .amount p, #inputblock-vermt .header-input .amount p {
+      #inputblock .header-input .amount p {
         padding-left: 10px;
         width: 100px;
         height: 10px;
@@ -5045,13 +5086,13 @@ body {
         font-weight: 400;
         margin-bottom: 0;
         line-height: 30px; }
-  #inputblock-cart .border, #inputblock-coffe .border, #inputblock-bear .border, #inputblock-nast .border, #inputblock-vodka .border, #inputblock-kogn .border, #inputblock-burg .border, #inputblock-vermt .border {
+  #inputblock .border {
     width: 879px;
     -webkit-box-shadow: 0 11px 16px rgba(0, 0, 0, 0.11);
             box-shadow: 0 11px 16px rgba(0, 0, 0, 0.11);
     background-color: #ffffff;
     border-top: 3px solid #391e07; }
-    #inputblock-cart .border .amount-size, #inputblock-coffe .border .amount-size, #inputblock-bear .border .amount-size, #inputblock-nast .border .amount-size, #inputblock-vodka .border .amount-size, #inputblock-kogn .border .amount-size, #inputblock-burg .border .amount-size, #inputblock-vermt .border .amount-size {
+    #inputblock .border .amount-size {
       position: relative;
       width: 210px;
       height: 45px;
@@ -5068,21 +5109,21 @@ body {
       -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
               justify-content: space-around; }
-      #inputblock-cart .border .amount-size p, #inputblock-coffe .border .amount-size p, #inputblock-bear .border .amount-size p, #inputblock-nast .border .amount-size p, #inputblock-vodka .border .amount-size p, #inputblock-kogn .border .amount-size p, #inputblock-burg .border .amount-size p, #inputblock-vermt .border .amount-size p {
+      #inputblock .border .amount-size p {
         color: #180e0c;
         font-family: ProximaNovaRegular-g, sans-serif;
         font-size: 16px;
         font-weight: 400;
         line-height: 30px;
         margin-top: 10px; }
-    #inputblock-cart .border .content-input .content-name, #inputblock-coffe .border .content-input .content-name, #inputblock-bear .border .content-input .content-name, #inputblock-nast .border .content-input .content-name, #inputblock-vodka .border .content-input .content-name, #inputblock-kogn .border .content-input .content-name, #inputblock-burg .border .content-input .content-name, #inputblock-vermt .border .content-input .content-name {
+    #inputblock .border .content-input .content-name {
       color: #180e0c;
       font-family: ProximaNovaRegular-g, sans-serif;
       font-size: 22px;
       font-weight: 400;
       line-height: 30px;
       padding-left: 15px; }
-    #inputblock-cart .border .content-input .content, #inputblock-coffe .border .content-input .content, #inputblock-bear .border .content-input .content, #inputblock-nast .border .content-input .content, #inputblock-vodka .border .content-input .content, #inputblock-kogn .border .content-input .content, #inputblock-burg .border .content-input .content, #inputblock-vermt .border .content-input .content {
+    #inputblock .border .content-input .content {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -5093,7 +5134,7 @@ body {
               flex: row;
       width: 879px;
       height: 65px; }
-      #inputblock-cart .border .content-input .content .text, #inputblock-coffe .border .content-input .content .text, #inputblock-bear .border .content-input .content .text, #inputblock-nast .border .content-input .content .text, #inputblock-vodka .border .content-input .content .text, #inputblock-kogn .border .content-input .content .text, #inputblock-burg .border .content-input .content .text, #inputblock-vermt .border .content-input .content .text {
+      #inputblock .border .content-input .content .text {
         width: 612px;
         height: 30px;
         color: #180e0c;
@@ -5101,7 +5142,7 @@ body {
         font-size: 14px;
         font-weight: 400;
         padding-left: 15px; }
-      #inputblock-cart .border .content-input .content .content-size, #inputblock-coffe .border .content-input .content .content-size, #inputblock-bear .border .content-input .content .content-size, #inputblock-nast .border .content-input .content .content-size, #inputblock-vodka .border .content-input .content .content-size, #inputblock-kogn .border .content-input .content .content-size, #inputblock-burg .border .content-input .content .content-size, #inputblock-vermt .border .content-input .content .content-size {
+      #inputblock .border .content-input .content .content-size {
         position: absolute;
         left: 670px;
         display: -webkit-box;
@@ -5117,13 +5158,13 @@ body {
             -ms-flex-pack: distribute;
                 justify-content: space-around;
         width: 210px; }
-        #inputblock-cart .border .content-input .content .content-size p, #inputblock-coffe .border .content-input .content .content-size p, #inputblock-bear .border .content-input .content .content-size p, #inputblock-nast .border .content-input .content .content-size p, #inputblock-vodka .border .content-input .content .content-size p, #inputblock-kogn .border .content-input .content .content-size p, #inputblock-burg .border .content-input .content .content-size p, #inputblock-vermt .border .content-input .content .content-size p {
+        #inputblock .border .content-input .content .content-size p {
           color: #180e0c;
           font-family: ProximaNovaRegular-g, sans-serif;
           font-size: 18px;
           font-weight: 400;
           line-height: 30px; }
-    #inputblock-cart .border .content-input .content-name-bg, #inputblock-coffe .border .content-input .content-name-bg, #inputblock-bear .border .content-input .content-name-bg, #inputblock-nast .border .content-input .content-name-bg, #inputblock-vodka .border .content-input .content-name-bg, #inputblock-kogn .border .content-input .content-name-bg, #inputblock-burg .border .content-input .content-name-bg, #inputblock-vermt .border .content-input .content-name-bg {
+    #inputblock .border .content-input .content-name-bg {
       color: #180e0c;
       font-family: ProximaNovaRegular-g, sans-serif;
       font-size: 22px;
@@ -5131,7 +5172,7 @@ body {
       line-height: 30px;
       padding-left: 15px;
       background-color: #f6f6f6; }
-    #inputblock-cart .border .content-input .content-bg, #inputblock-coffe .border .content-input .content-bg, #inputblock-bear .border .content-input .content-bg, #inputblock-nast .border .content-input .content-bg, #inputblock-vodka .border .content-input .content-bg, #inputblock-kogn .border .content-input .content-bg, #inputblock-burg .border .content-input .content-bg, #inputblock-vermt .border .content-input .content-bg {
+    #inputblock .border .content-input .content-bg {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -5143,7 +5184,7 @@ body {
       width: 879px;
       height: 65px;
       background-color: #f6f6f6; }
-      #inputblock-cart .border .content-input .content-bg .text, #inputblock-coffe .border .content-input .content-bg .text, #inputblock-bear .border .content-input .content-bg .text, #inputblock-nast .border .content-input .content-bg .text, #inputblock-vodka .border .content-input .content-bg .text, #inputblock-kogn .border .content-input .content-bg .text, #inputblock-burg .border .content-input .content-bg .text, #inputblock-vermt .border .content-input .content-bg .text {
+      #inputblock .border .content-input .content-bg .text {
         width: 612px;
         height: 30px;
         color: #180e0c;
@@ -5151,7 +5192,7 @@ body {
         font-size: 14px;
         font-weight: 400;
         padding-left: 15px; }
-      #inputblock-cart .border .content-input .content-bg .content-size, #inputblock-coffe .border .content-input .content-bg .content-size, #inputblock-bear .border .content-input .content-bg .content-size, #inputblock-nast .border .content-input .content-bg .content-size, #inputblock-vodka .border .content-input .content-bg .content-size, #inputblock-kogn .border .content-input .content-bg .content-size, #inputblock-burg .border .content-input .content-bg .content-size, #inputblock-vermt .border .content-input .content-bg .content-size {
+      #inputblock .border .content-input .content-bg .content-size {
         position: absolute;
         left: 670px;
         display: -webkit-box;
@@ -5167,7 +5208,7 @@ body {
             -ms-flex-pack: distribute;
                 justify-content: space-around;
         width: 210px; }
-        #inputblock-cart .border .content-input .content-bg .content-size p, #inputblock-coffe .border .content-input .content-bg .content-size p, #inputblock-bear .border .content-input .content-bg .content-size p, #inputblock-nast .border .content-input .content-bg .content-size p, #inputblock-vodka .border .content-input .content-bg .content-size p, #inputblock-kogn .border .content-input .content-bg .content-size p, #inputblock-burg .border .content-input .content-bg .content-size p, #inputblock-vermt .border .content-input .content-bg .content-size p {
+        #inputblock .border .content-input .content-bg .content-size p {
           color: #180e0c;
           font-family: ProximaNovaRegular-g, sans-serif;
           font-size: 18px;
@@ -5354,7 +5395,7 @@ section .p {
   background: rgba(0, 0, 0, 0.4);
   position: absolute;
   z-index: 3;
-  height: 100%;
+  height: 640px;
   width: 100%;
   z-index: 4; }
 
@@ -5585,9 +5626,7 @@ section .linervidguk {
     font-size: 18px;
     border-top: 1px solid #ffffff;
     width: 100%;
-		padding-top: 10px;
-		margin-bottom: 0;
-	}
+    padding-top: 10px; }
 
 .botm {
   position: relative;
@@ -5606,12 +5645,7 @@ section .linervidguk {
     .botm .botm-knopka:hover {
       font-size: 30px;
       cursor: pointer;
-			color: white; }
-	
-.nav{
-	margin: 0;
-	padding: 0;
-}
+      color: white; }
 
 @-webkit-keyframes spiderSwaying {
   0% {
@@ -5634,6 +5668,10 @@ section .linervidguk {
   100% {
     -webkit-transform: rotate(-10deg);
             transform: rotate(-10deg); } }
+
+.nav {
+  padding: 0;
+  margin: 0; }
 
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
