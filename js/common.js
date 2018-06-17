@@ -19,12 +19,55 @@ showBlock.showInfoBlock = function(event){
 	
 		if(target.className == 'li-input'){
 		
-			creatBlock(+target.getAttribute('data'),+target.getAttribute('data-number'),target.getAttribute('data-name'));
+			creatBlock(+target.getAttribute('data'),+target.getAttribute('data-number'));
 		}
 
 	if(ul){
 			ul.id = 'show-menu';
 	}
+
+}
+
+function creatBlock(index, number){
+	
+	var blockInput = document.getElementById('inputblock')
+	
+	var html = '<div class="header-input">';
+	html 		+= 	'<div class="name">'+sidebar[number][index][0].name+'</div>';
+	html 		+= 	'<div class="amount"><p>'+sidebar[number][index][0].amount+'</p><p>'+sidebar[number][index][0].amountP+'</p></div>';
+	html 		+= '</div>';
+	html 		+= '<div class="border">';
+	html 		+= '<div class="content-input">';
+	html 		+= 	'<div class="amount-size"><p>'+sidebar[number][index][0].amountSize+' мл</p><p>'+sidebar[number][index][0].size+'</p></div>';
+	html 		+= 	'<div class="content-name-bg">'+sidebar[number][index][1].name+'</div>';
+	html 		+= 	'<div class="content-bg">';
+	html 		+= 		'<div class="text">'+sidebar[number][index][1].text+'</div>';
+	html 		+= 		'<div class="content-size"><p>'+sidebar[number][index][1].size+'</p><p>'+sidebar[number][index][1].price+'</p></div>';
+	html 		+= 	'</div>';
+	html 		+= 	'<div class="content-name">'+sidebar[number][index][2].name+'</div>';
+	html 		+= 	'<div class="content">';
+	html 		+= 		'<div class="text">'+sidebar[number][index][2].text+'</div>';
+	html 		+= 		'<div class="content-size"><p>'+sidebar[number][index][2].size+'</p><p>'+sidebar[number][index][2].price+'</p></div>';
+	html 		+= 	'</div>';
+	html 		+= 	'<div class="content-name-bg">'+sidebar[number][index][3].name+'</div>';
+	html 		+= 	'<div class="content-bg">';
+	html 		+= 		'<div class="text">'+sidebar[number][index][3].text+'</div>';
+	html 		+= 		'<div class="content-size"><p>'+sidebar[number][index][3].size+'</p><p>'+sidebar[number][index][3].price+'</p></div>';
+	html 		+= 	'</div>';
+	html 		+= 	'<div class="content-name">'+sidebar[number][index][4].name+'</div>';
+	html 		+= 	'<div class="content">';
+	html 		+= 		'<div class="text">'+sidebar[number][index][4].text+'</div>';
+	html 		+= 		'<div class="content-size"><p>'+sidebar[number][index][4].size+'</p><p>'+sidebar[number][index][4].price+'</p></div>';
+	html 		+= 	'</div>';
+	html 		+= 	'<div class="content-name-bg">'+sidebar[number][index][5].name+'</div>';
+	html 		+= 	'<div class="content-bg">';
+	html 		+= 		'<div class="text">'+sidebar[number][index][5].text+'</div>';
+	html 		+= 		'<div class="content-size"><p>'+sidebar[number][index][5].size+'</p><p>'+sidebar[number][index][5].price+'</p></div>';
+	html 		+= 	'</div>';
+	html 		+= 	'</div>';
+	html 		+= '</div>';
+
+	blockInput.innerHTML = html;
 
 }
 
